@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 10px;
+    background: #242323;
+}
+.chat-messages {
+    overflow-y: auto;
+    height: calc(100% - 90px);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.sender-logo {
+    background-color: #008181;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    color: aliceblue;
+    margin-right: 10px;
+    user-select: none;
+    text-transform: uppercase;
+}
+.sender {
+    display: inline-flex;
+    align-items: center;
+    font-weight: bold;
+}
+.message {
+    background-color: #e9e9e9;
+    padding: 10px;
+    height: fit-content;
+    min-width: 200px;
+    max-width: 300px;
+    margin: 10px 0px;
+    margin-left: 45px;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+}
+.botMessage {
+    width: 100%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    background: linear-gradient(90deg, blueviolet, purple);
+    color: aliceblue;
+    border: 600px solid #242323;
+    border-bottom: 0px;
+    border-top: 0px;
+    margin-bottom: 10px;
+}
+.botMessage:first-child {
+    margin-top: 60px;
+}
+.botMessage:last-child {
+    margin-bottom: 50px;
+}
+.message:last-child{
+    margin-bottom: 100px;
+}
+.message > pre {
+    margin-top: 10px;
+}
+.logo {
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    font-weight: 800;
+    background-color: black;
+}
+#people {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: purple;
+    padding: 5px 0px;
+}
+.input {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+    width: 100%;
+    background: #1a1a1a
+}
+.input > textarea {
+    width: calc(100% - 80px);
+    background: black;
+    border: none;
+    padding: 10px;
+    outline: 2px solid #161616;
+    color: white;
+    resize: none;
+}
+.input > button {
+    background: linear-gradient(90deg, blueviolet, purple);
+    border: none;
+    padding: 15px 5px;
+    font-size: 15px;
+    color: aliceblue;
+    position: relative;
+    bottom: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.navTop {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    background: rgb(26, 26, 26);
+    z-index: 1;
+    font-weight: bolder;
+}
+@media screen and (max-width: 500px) {
+    .botMessage {
+        border: 0;
+    }
+    .message {
+        margin-left: 5px;
+    }
+}

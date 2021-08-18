@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chord | LIVE CHAT</title>
+    <link rel="stylesheet" href="Styles/Style.css">
+    <script src="https://kit.fontawesome.com/a1e7767ad2.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="https://cdn.icon-icons.com/icons2/1875/PNG/512/chat_120238.png" type="image/x-icon">
+</head>
+<body>
+    <div class="CHATROOM">
+        <nav class="navTop"><div class="logo"><i class="fas fa-comments"></i> CHORD</div>🔴 Live Chat</nav>
+        <div id="_CHAT_">
+            <div class="chat-messages" id="CHAT"></div>
+
+            <form class="input" id="msgInput">
+                <textarea placeholder="Type a message..." id="msg" ></textarea>
+                <button type="submit"><i class="fas fa-paper-plane"></i> Send</button>
+                <div id="people"><i class="fas fa-users"></i>&nbsp;Total 1 participant</div>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.10.1/qs.min.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+    <script src="Scripts/Main.js"></script>
+</body>
+</html>
