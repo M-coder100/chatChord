@@ -4,7 +4,7 @@
   "description": "ChatApp",
   "main": "server.js",
   "scripts": {
-    "test": "nodemon server"
+    "test": "node server"
   },
   "author": "MODE",
   "license": "MIT",
