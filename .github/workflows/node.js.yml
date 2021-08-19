@@ -17,4 +17,3 @@ jobs:
           node-version: '10.x'
       - run: npm ci
       - run: npm test
-The code never passes the npm test
