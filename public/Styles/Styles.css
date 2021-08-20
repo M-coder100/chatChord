@@ -46,7 +46,7 @@ body {
 }
 #NAME {
     padding: 5px 0px;
-    outline: 1px solid gray;
+    outline: none;
     background-color: black;
     margin-top: 5px;
     border: none;

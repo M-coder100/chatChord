@@ -5,8 +5,13 @@ const socketio = require('socket.io');
 const app = express();
 const server = http.createServer(app);
 const io = socketio(server);
-const formatMsg = require('./messages');
-app.use(express.static(path.join(__dirname, 'public')));
+function formatMsg(user, text) {
+    return {
+        user,
+        text
+    }
+}
+app.use(express.static(path.join(__dirname, 'CHORD')));
 const botName = 'BOT';
 io.on('connection', socket => {
     socket.on('USERNAME', ({ Name }) => {

@@ -11,13 +11,13 @@
 </head>
 <body>
     <div class="CHATROOM">
-        <nav class="navTop"><div class="logo"><i class="fas fa-comments"></i> CHORD</div>🔴 Live Chat</nav>
+        <nav class="navTop"><div class="logo"><i class="fas fa-comments"></i> CHORD</div>🔴 Live Chat <a id="THEME_CHANGER" title="Change Theme"><i class="fas fa-adjust"></i></a></nav>
         <div id="_CHAT_">
             <div class="chat-messages" id="CHAT"></div>
 
             <form class="input" id="msgInput">
-                <textarea placeholder="Type a message..." id="msg" ></textarea>
-                <button type="submit"><i class="fas fa-paper-plane"></i> Send</button>
+                <textarea placeholder="Type a message..." id="msg"></textarea>
+                <button type="submit" title="Send Message.."><i class="fas fa-paper-plane"></i> Send</button>
                 <div id="people"><i class="fas fa-users"></i>&nbsp;Total 1 participant</div>
             </form>
         </div>
@@ -25,5 +25,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.10.1/qs.min.js"></script>
 	<script src="/socket.io/socket.io.js"></script>
     <script src="Scripts/Main.js"></script>
+    <script src="Scripts/Theme-Changer.js"></script>
 </body>
 </html>
